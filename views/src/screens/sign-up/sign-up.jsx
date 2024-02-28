@@ -2,7 +2,6 @@ import React from "react";
 import MiddleLogoContainer from "../../includes/middleLogoContainer";
 import "../../styles/register.css";
 import Formulario from "../../includes/signUpForm";
-
 function SignUpScreen() {
     
     

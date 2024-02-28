@@ -83,7 +83,7 @@ const Formulario = () => {
           <div>
             <fieldset>
             <div className="form__container">
-                <legend id="log_in">
+                <legend className="log_in">
                     <span style={{ color: '#3D00B7' }}>Sign </span>
                     <span style={{ color: '#55ACEE' }}>Up</span>
                 </legend>

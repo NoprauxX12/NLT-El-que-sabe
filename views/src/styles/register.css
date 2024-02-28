@@ -42,7 +42,7 @@ body, html {
     margin-top: 5%;
   }
 
-  #log_in{
+  .log_in{
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -52,4 +52,9 @@ body, html {
 
   .bigger{
     font-size: 5rem;
+  }
+
+  #formlog{
+    padding-top: 25%;
+    height: 100vh;
   }
