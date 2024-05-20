@@ -1,4 +1,4 @@
-# El Que Sabe
+<h1 align="center">El Que Sabe</h1>
 
 El Que Sabe is a web application that serves as an efficient intermediary between freelancers and clients. Our app brings together professionals from various fields into a single catalog, streamlining and expediting the connection process between service providers and those in need of services.
 
@@ -30,13 +30,13 @@ Repeat the same process for the `technicalknowledge` table using `technicalknowl
 Rename the `.env-change` file to `.env`.
 
 Update the variables in the `.env` file with your own database credentials:
-
+```env
 DB_HOST=localhost
 DB_USER=myuser
 DB_PASS=mypassword
 DATABASE=el_que_sabe
 PORT=port_to_use
-
+```
 
 ## Usage
 
