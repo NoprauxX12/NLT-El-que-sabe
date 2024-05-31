@@ -74,7 +74,7 @@ class EmailSender {
         </body>
         </html>
         `;
-
+        
         const info = await this.transporter.sendMail({
             from: '"El Que Sabe"',
             to: email,

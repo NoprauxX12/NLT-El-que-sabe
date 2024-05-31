@@ -151,7 +151,7 @@ const EstimateContainer =({toggleChat, estimateId, socket, show, onOpen})=>{
                 <h5 style={{}}>{estimate.city} - {estimate.adress}</h5>
                 {(3===parseInt(estimate.state) || 4===parseInt(estimate.state)) && (<>
                     <h1 style={{color: "#3D00B7", fontWeight: "bold", marginBottom: "1em"}}>Valor: <span style={{float: "right", marginRight:"1em",color: "#3D00B7"}}>{estimate.cost}.000</span></h1>
-                    <p>Importante: las cotizaciones incluyen unicamente el costo de la mano de obra.</p>
+                    <p>Importante: las cotizaciones incluyen únicamente el costo de la mano de obra.</p>
                 </>)}
                 {showRealizar && (<>
                 <SendEstimateOv  onSend={onSend} onClose={onClose} estimateId={estimateId}/>
@@ -180,9 +180,9 @@ const AskOv= ({onClose, cost, onAcept})=>{
     <div className="overlay" >
         <div className="deal-box" style={{height:"40%", width: "50%"}} >
            <div style={{width: "90%"}}>
-            <h2 style={{color:"#55ACEE", fontWeight: "bold"}}> <span style={{color:"#3D00B7", fontWeight: "bold"}}>Quieres Aceptar </span> la cotizacion</h2>
+            <h2 style={{color:"#55ACEE", fontWeight: "bold"}}> <span style={{color:"#3D00B7", fontWeight: "bold"}}>¿Quieres aceptar </span> la cotización?</h2>
                     <h4>por: {cost} <span style={{marginLeft: "0", marginTop: "0.2em"}}>.000</span></h4>
-                    <p> <span style={{color: "#3D00B7", fontWeight: "bold"}}>Importante:</span> las cotizaciones incluyen unicamente el costo de la mano de obra.</p>
+                    <p> <span style={{color: "#3D00B7", fontWeight: "bold"}}>Importante:</span> las cotizaciones incluyen únicamente el costo de la mano de obra.</p>
                     <button type="button" className="botn" id="button_b" onClick={onClose} style={{display: "inline-block", marginBottom: "0.1em"}}>Cancelar</button>
                     <button type="button" className="botn" id="button" onClick={onAcept} style={{display: "inline-block", marginBottom: "0.1em"}}>Aceptar</button>
            </div>

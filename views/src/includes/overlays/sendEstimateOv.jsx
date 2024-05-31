@@ -32,7 +32,7 @@ const SendEstimateOv= ({onClose, estimateId, onSend})=>{
                     type="text" // Usamos text en lugar de number para permitir caracteres de separación de miles
                     value={cost}
                     onChange={handleChange}
-                    placeholder="$ Ingrese el costo de el servicio "
+                    placeholder="$ Ingrese el costo del servicio "
                     />
                     <button type="button" className="botn" id="button_b" onClick={onClose} style={{display: "inline-block", marginBottom: "0.1em"}}>Cerrar</button>
                     <button type="submit" className="botn" id="button" style={{display: "inline-block", marginBottom: "0.1em"}}>Enviar</button>

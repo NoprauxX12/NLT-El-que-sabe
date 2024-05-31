@@ -18,8 +18,8 @@ const Footer=()=>{
                     <p><a href="#explore" style={{color: "#000" }}>Todos los freelancers</a></p>
                     <p><a href="#botones_ingreso" style={{color: "#000" }}>Registro</a></p>
                     <p><a href="#descubre" style={{color: "#000" }}>Descubre y conecta</a></p>
-
                 </div>
+
                 <div className="col-md-4">
                     <h5>Suscripción</h5>
                     <form>
@@ -35,7 +35,11 @@ const Footer=()=>{
                 </div>
             </div>
             <div className="col" style={{display: "block"}}>
-                <p className="text-center">copyright © 2024 El Que Sabe.</p>
+                <p className="text-center">Copyright © 2024 El Que Sabe</p>
+            </div>
+            <div className="row" style={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"row"}}>
+            <p className="text-center" style={{width:"auto", marginTop:"10px", fontWeight:"bold"}}>Powered by </p> 
+            <img src="/images/logo-magneto.png" alt="Magneto" style={{width:"10%"}}/>
             </div>
             </footer>
         </>
