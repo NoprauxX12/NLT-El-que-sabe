@@ -29,7 +29,6 @@ const FrirstStep = ({formValues, users, handleChange, step})=>{
             <div className="form-group">
             <label htmlFor="exampleInputEmail1" className="form-label mt-4">Dirección de Email</label>
             <input value={formValues.email} type="email" name="email" className="form-control" onChange={handleChange} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese Email" required />
-            <small id="emailHelp" className="form-text text-muted">No compartiremos tu Email.</small>
             </div>
             <div className="form-group">
             <label htmlFor="exampleInputPassword1" className="form-label mt-4 ">Contraseña</label>

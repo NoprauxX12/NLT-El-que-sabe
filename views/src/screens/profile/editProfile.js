@@ -228,13 +228,15 @@ function ViewProfile(){
     return (
       <>
         <div className="main-container">
-          <div className="header-container-edit">
-          <a href={Urls.viewProfile+`/?id=${id}&usertype=${usertype}`} style={{display: "inline-block"}}> 
-              <div className="back" style={{position: "absolute", marginTop: "0"}}>
+          <div className="header-container-nolog">
+            <a href={Urls.viewProfile+`/?id=${id}&usertype=${usertype}`}> 
+              <div className="back">
                 <i class='bx bx-chevron-left' style={{color: '#7d7d7d', fontSize: "4em"}} ></i>
               </div>
             </a>
-            <h1>{user.name}</h1>
+            <div className="header-name">
+              <h1>{user.name}</h1>
+            </div>
           </div>
           <form id="profile-form" onSubmit={handleSubmit}>
             <div className="content-container">

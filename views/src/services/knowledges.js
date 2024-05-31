@@ -7,7 +7,7 @@ class KnowledgeData{
             const res= await axios.post(BaseUrl.serverUsers + "/knowledge");
             res.data.splice(0,0,{
                 "idTechnicalKnowledge": "00",
-                "title": "seleccione una opcion"
+                "title": "Seleccione una opción"
             })
             cb(res.data);
         } catch (error) {

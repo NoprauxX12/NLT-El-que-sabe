@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `el_que_sabe`.`contractoffer` (
     FOREIGN KEY (`idClient`)
     REFERENCES `el_que_sabe`.`client` (`idClient`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 17
+AUTO_INCREMENT = 19
 DEFAULT CHARACTER SET = utf8mb3;
 
 
@@ -200,7 +200,7 @@ CREATE TABLE IF NOT EXISTS `el_que_sabe`.`estimate` (
   PRIMARY KEY (`estimateId`),
   INDEX `fk_message_client1_idx` (`idClient` ASC),
   INDEX `fk_message_freelancer1_idx` (`idFreelancer` ASC),
-  INDEX `fk_estimate_town1_idx` (`idCity` ASC) VISIBLE,
+  INDEX `fk_estimate_town1_idx` (`idCity` ASC),
   INDEX `fk_estimate_state1_idx` (`state_stateId` ASC),
   CONSTRAINT `fk_estimate_state1`
     FOREIGN KEY (`state_stateId`)
@@ -215,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `el_que_sabe`.`estimate` (
     FOREIGN KEY (`idFreelancer`)
     REFERENCES `el_que_sabe`.`freelancer` (`idFreelancer`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 69
+AUTO_INCREMENT = 80
 DEFAULT CHARACTER SET = utf8mb3;
 
 
@@ -268,7 +268,7 @@ CREATE TABLE IF NOT EXISTS `el_que_sabe`.`imegesco` (
     FOREIGN KEY (`idContractOffer`)
     REFERENCES `el_que_sabe`.`contractoffer` (`idContractOffer`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 6
+AUTO_INCREMENT = 8
 DEFAULT CHARACTER SET = utf8mb3;
 
 
@@ -315,7 +315,7 @@ CREATE TABLE IF NOT EXISTS `el_que_sabe`.`messages` (
     FOREIGN KEY (`estimateId`)
     REFERENCES `el_que_sabe`.`estimate` (`estimateId`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 257
+AUTO_INCREMENT = 275
 DEFAULT CHARACTER SET = utf8mb3;
 
 

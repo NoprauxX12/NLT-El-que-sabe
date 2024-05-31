@@ -38,10 +38,10 @@ const PortfolioCard = (props) => {
                 />
               </>
             )}
-            <h5 className="card-title" style={{fontWeight:"bolder",marginTop:"10px"}}>{portfolioItem.title.length>21 ? portfolioItem.title.slice(0,20)+"...":portfolioItem.title}</h5>
+            <h5 className="card-title" style={{fontWeight:"bolder",marginTop:"10px"}}>{portfolioItem.title.length>18 ? portfolioItem.title.slice(0,17)+"...":portfolioItem.title}</h5>
             <p className="card-text">
-              {portfolioItem.description.length > 26
-                ? portfolioItem.description.slice(0, 25) + "..."
+              {portfolioItem.description.length > 23
+                ? portfolioItem.description.slice(0, 22) + "..."
                 : portfolioItem.description}
             </p>
             <p className="card-text">

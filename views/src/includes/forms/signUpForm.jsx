@@ -43,15 +43,15 @@ const Formulario = () => {
     };
     
     if(formValues.password1 !== formValues.password2){
-      setErr("las contraseñas no coinciden");
+      setErr("Las contraseñas no coinciden");
     }else if((!formValues.email.includes("@") || !formValues.email.includes(".com")) && formValues.email.length > 0){
-        setErr("ingrese un email valido por favor");
+        setErr("Ingrese un email válido, por favor");
     }else if(formValues.cellphone.length < 10 && formValues.cellphone.length > 0){
-        setErr("ingrese un telefono valido");
+        setErr("Ingrese un télefono valido");
     }else if (formValues.cellphone[0]!=="3" && formValues.cellphone.length > 0){
-      setErr("ingrese un telefono valido");
+      setErr("Ingrese un teléfono valido");
     } else if(formValues.idCard.length> 0 &&formValues.idCard.length < 4){
-      setErr("ingrese una cedula valida");
+      setErr("Ingrese una cédula válida");
     } else{
       setErr(null);
     }
@@ -88,7 +88,7 @@ const Formulario = () => {
     switch (step) {
       case 1:
         if((formValues.password1.length + formValues.password2.length) < 16){
-          setErr("La contraseña debe contener mínimo 8 caracteres.")
+          setErr("La contraseña debe contener mínimo 8 caracteres")
         }else if(err===null){
           if(formValues.user!=="0"){
             setErr(null);
@@ -156,7 +156,6 @@ const Formulario = () => {
             <div className="form-group">
             <label htmlFor="exampleInputEmail1" className="form-label mt-4">Dirección de Email</label>
             <input value={formValues.email} type="email" name="email" className="form-control" onChange={handleChange} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese Email" required />
-            <small id="emailHelp" className="form-text text-muted">No compartiremos tu Email.</small>
             </div>
             <div className="form-group">
             <label htmlFor="exampleInputPassword1" className="form-label mt-4 ">Contraseña</label>
@@ -202,7 +201,7 @@ const Formulario = () => {
                     required
                     value={formValues.cellphone}
                     onChange={handleChange}
-                    placeholder="celular"
+                    placeholder="300123..."
                     />
                 </div>
                 <div className="form-group">
@@ -213,7 +212,7 @@ const Formulario = () => {
                     name="telphone"
                     value={formValues.telphone}
                     onChange={handleChange}
-                    placeholder="telefono"
+                    placeholder="Teléfono"
                     />
                 </div>
                     
@@ -251,7 +250,7 @@ const Formulario = () => {
                     name="idCard"
                     value={formValues.idCard}
                     onChange={handleChange}
-                    placeholder="Cedula"
+                    placeholder="Cédula"
                     />
                 </div>
                 <div className="form-group">
@@ -264,7 +263,7 @@ const Formulario = () => {
                     name="adress"
                     value={formValues.adress}
                     onChange={handleChange}
-                    placeholder="direccion"
+                    placeholder="Dirección"
                     />
                 </div>
             </div>

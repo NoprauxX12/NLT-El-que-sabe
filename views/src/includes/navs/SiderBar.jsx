@@ -100,7 +100,7 @@ const SiderBar = () => {
                 {userData.user==="1" ? (<>
                 <li>
                     <a href={Urls.home}>
-                    <i className="bx bx-cog" />
+                    <i className="bx bx-home-alt-2" style={{color: 'rgba(255,255,255,0.29)'}} />
                     <span className="nav-item">Ofertas</span>
                     </a>
                     <span className="tooltip">Ofertas</span>
@@ -109,9 +109,9 @@ const SiderBar = () => {
                 <li>
                     <a href={Urls.home}>
                     <i className="bx bx-home-alt-2" style={{color: 'rgba(255,255,255,0.29)'}} />
-                    <span className="nav-item">Home</span>
+                    <span className="nav-item">Freelancers</span>
                     </a>
-                    <span className="tooltip">Home</span>
+                    <span className="tooltip">Freelancers</span>
                 </li>
                 </>)}
                 
@@ -164,9 +164,9 @@ const SiderBar = () => {
                 <li>
                     <a href='/' onClick={(e) => handleLogout(e)}>
                     <i className="bx bx-log-out" />
-                    <span className="nav-item">Logout</span>
+                    <span className="nav-item">Salir</span>
                     </a>
-                    <span className="tooltip">Logout</span>
+                    <span className="tooltip">Salir</span>
                 </li>
             </ul>
         </div>

@@ -32,7 +32,7 @@ const SecondStep = ({formValues, cityes, handleChange, step})=>{
                             required
                             value={formValues.cellphone}
                             onChange={handleChange}
-                            placeholder="celular"
+                            placeholder="300123..."
                             />
                         </div>
                         <div className="form-group">
@@ -43,7 +43,7 @@ const SecondStep = ({formValues, cityes, handleChange, step})=>{
                             name="telphone"
                             value={formValues.telphone}
                             onChange={handleChange}
-                            placeholder="telefono"
+                            placeholder="Teléfono"
                             />
                         </div>
                             

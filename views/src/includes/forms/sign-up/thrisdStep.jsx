@@ -22,7 +22,7 @@ const ThirdStep = ({formValues, handleChange, step})=>{
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="idCard" className="form-label mt-4">Cedula</label>
+                            <label htmlFor="idCard" className="form-label mt-4">Cédula</label>
                             <input
                             className="form-control" 
                             required
@@ -30,7 +30,7 @@ const ThirdStep = ({formValues, handleChange, step})=>{
                             name="idCard"
                             value={formValues.idCard}
                             onChange={handleChange}
-                            placeholder="Cedula"
+                            placeholder="Cédula"
                             />
                         </div>
                         <div className="form-group">
@@ -43,7 +43,7 @@ const ThirdStep = ({formValues, handleChange, step})=>{
                             name="adress"
                             value={formValues.adress}
                             onChange={handleChange}
-                            placeholder="direccion"
+                            placeholder="Ej: Cra. 11 #22-33..."
                             />
                         </div>
                         <div className="form-check">
@@ -55,7 +55,7 @@ const ThirdStep = ({formValues, handleChange, step})=>{
                         <div className="form-check">
                         <input className="form-check-input" type="checkbox" id="termsCheckbox" required />
                         <label className="form-check-label" htmlFor="termsCheckbox">
-                            Acepto la poltica de <a href="/files/dataPolicy.pdf" target="_blank" rel="noopener noreferrer">tratamiento de datos</a>
+                            Acepto la política de <a href="/files/dataPolicy.pdf" target="_blank" rel="noopener noreferrer">tratamiento de datos</a>
                         </label>
                         </div>
                     </div>

@@ -112,27 +112,23 @@ function ViewProfile(){
       <>
         <div className="main-container">
           <div className={((userData === null) || (userData.user === "2")) ? "header-container-nolog" : "header-container"}>
-            <div>
-            <a href="/" style={{ display: "inline-block" }}>
-              <div className="back" style={{ marginTop: "0" }}>
+            <a href="/">
+              <div className="back">
                 <i className='bx bx-chevron-left' style={{ color: '#7d7d7d', fontSize: "4em" }}></i>
               </div>
             </a>
+            <div className="header-name">
+              <h1>{user.name}</h1>
             </div>
-            <div className="header-content">
-              <div className="header-name">
-                <h1 style={{marginRight: "6em"}}>{user.name}</h1>
+            {userData && (
+              <div className="edit">
+                {userData.idCard === id && (
+                  <a href={Urls.editProfile + `/?id=${id}&usertype=${usertype}`}>
+                    <i className='bx bx-edit-alt' style={{ color: '#7d7d7d', fontSize: "3em" }}></i>
+                  </a>
+                )}
               </div>
-              {userData && (
-                <div className="edit" style={{ marginTop: "5px", marginLeft: "10px" }}>
-                  {userData.idCard === id && (
-                    <a href={Urls.editProfile + `/?id=${id}&usertype=${usertype}`}>
-                      <i className='bx bx-edit-alt' style={{ color: '#7d7d7d', fontSize: "3em" }}></i>
-                    </a>
-                  )}
-                </div>
-              )}
-            </div>
+            )}
           </div>
           <div className="content-container">
             <div className="left-container">

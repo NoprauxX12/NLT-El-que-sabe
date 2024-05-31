@@ -24,45 +24,21 @@
     padding: 1%;
   }
   
-  .header-container-nolog {
-    padding-bottom: 1%;
-  }
-  
-  .header-container h1 {
+  .header-container h1, .header-container-nolog h1 {
     font-weight: 400;
     font-size: 4rem;
     text-align: center;
     margin-bottom: 0px;
     color: #363639;
-  }
-  
-  .header-content {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header-name {
-    flex-grow: 1; /* Ajusta el ancho del contenedor para ocupar el espacio restante */
-    text-align: center; /* Centra el nombre */
   }
   
   .edit {
-    flex-shrink: 0; /* Evita que el botón de edición se reduzca de tamaño */
+    margin-left: 10px;
+    flex-shrink: 0;
   }
   
-
-.header-container-edit{
-    box-shadow: 1px 2px 3px #d0d0d0;
-    width: 100%;
-    padding-bottom: 1%;
-}
-
-.header-container h1, .header-container-edit h1, .header-container-nolog h1{
-    font-weight: 400;
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 0px;
-    color: #363639;
+.header-container-nolog .header-name {
+    flex-grow: 1;
 }
 
 .content-container{

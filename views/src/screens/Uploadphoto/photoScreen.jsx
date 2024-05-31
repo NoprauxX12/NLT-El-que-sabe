@@ -64,7 +64,7 @@ const UploadPhotoScreen = () => {
     console.log(k)
     setListOfKnowledge(k);
     }else{
-      setMesage("debe agregar un conocimiento");
+      setMesage("Debe agregar un conocimiento");
         toggleAlert();
     }
   }
@@ -107,7 +107,7 @@ const UploadPhotoScreen = () => {
             idCity: idCity,
             adress: adress
           });
-          setMesage("Te has registrado con éxito!");
+          setMesage("¡Te has registrado con éxito!");
           toggleAlert();
           setTimeout(() => {
             window.location.href = Urls.home;
@@ -153,7 +153,7 @@ const UploadPhotoScreen = () => {
               </label>
             </div>
             <div className="form-group">
-              <label htmlFor="description" className="form-label mt-4">Descripcion</label>
+              <label htmlFor="description" className="form-label mt-4">Descripción</label>
               <input
                 className="form-control"
                 onChange={(e)=>{
@@ -161,7 +161,7 @@ const UploadPhotoScreen = () => {
                 }}
                 type="text"
                 name="description"
-                placeholder="Descripcion"
+                placeholder="Añade una breve descripción sobre ti y tu trabajo..."
               />
             </div>
             {user==="1" && (
@@ -179,7 +179,7 @@ const UploadPhotoScreen = () => {
                     
                     </div>
                     )}
-                    <label htmlFor="knowledges" className="form-label mt-4">Conocimiento Tecnico:</label>
+                    <label htmlFor="knowledges" className="form-label mt-4">Conocimiento Técnico:</label>
                     <select className="form-control" style={{ backgroundColor: 'rgb(236, 236, 236)' }} id="knowledges" name="knowledges" onChange={async (e)=>{
                       const val= e.target.value.split(",");
                       console.log(val)
@@ -222,7 +222,7 @@ const UploadPhotoScreen = () => {
                 </div>
               </>
             )}
-            <button type="submit" className="btne_dark btn-primary mt-3">Guardar</button>
+            <button type="submit" className="btne_dark btn-primary mt-3">Enviar</button>
           </form>
         </div>
       </fieldset>

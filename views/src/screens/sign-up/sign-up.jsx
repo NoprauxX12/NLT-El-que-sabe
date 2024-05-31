@@ -93,29 +93,29 @@ function SignUpScreen() {
     switch (step) {
       case 1:
         if((formValues.password1.length + formValues.password2.length) < 16){
-          setErr("La contraseña debe contener minimo 8 caracteres.")
+          setErr("La contraseña debe contener mínimo 8 caracteres")
         }else if(err===null){
           if(formValues.user!=="0"){
             setErr(null);
             setStep(step + 1);
           }else{
-            setErr("debe seleccionar un usuario")
+            setErr("Debe seleccionar un usuario")
           }
         }
         break;
 
       case 2:
         if(formValues.idCity===""){
-          setErr("debe elegir una ciudad");
+          setErr("Debe elegir una ciudad");
         }else if(formValues.cellphone==="" && formValues.telphone===""){
-          setErr("debe agregar almenos un # de contacto");
+          setErr("Debe agregar al menos un # de contacto");
         }else{
           setStep(step+1);
         }
         break;
       case 3: 
         if(formValues.adress===""){
-          setErr("debe agregar una dirección");
+          setErr("Debe agregar una dirección");
         }
         break;
     
