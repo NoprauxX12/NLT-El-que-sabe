@@ -28,9 +28,9 @@ Repeat the same process for the `technicalknowledge` table using `technicalknowl
 
 ### Environment Configuration
 
-Rename the `.env-change` file to `.env`.
+Rename the `.env-change` files to `.env` in the `server` and `serverchat` folders.
 
-Update the variables in the `.env` file with your own database credentials:
+Update the variables in the `.env` files with your own database credentials:
 ```env
 DB_HOST=localhost
 DB_USER=myuser
